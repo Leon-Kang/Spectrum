@@ -54,6 +54,29 @@ class AudioAnalyzer {
         return bands
     }
     
+    func analyse(with buffer : AVAudioPCMBuffer) -> [[Float]] {
+        let channelsAmplitudes = fft(buffer)
+        let aWeights = createFrequencyWeights()
+        if spectrumBuffer.count == 0 {
+            for _ in 0 ..< channelsAmplitudes.count {
+                spectrumBuffer.append(Array<Float>(repeating: 0.0, count: bands.count))
+            }
+        }
+        for (index, amplitudes) in channelsAmplitudes.enumerated() {
+            let weightedAmplitudes = amplitudes.enumerated().map { (index, element) in
+                return element * aWeights[index]
+            }
+            var spectrum = bands.map {
+                findMaxAmplitude(for: $0, in: weightedAmplitudes, with: Float(buffer.format.sampleRate) / Float(self.fftSize)) * 5
+            }
+            spectrum = highlightWaveform(spectrum: spectrum)
+            
+            let zipped = zip(spectrumBuffer[index], spectrum)
+            spectrumBuffer[index] = zipped.map { $0.0 * spectrumSmooth + $0.1 * (1 - spectrumSmooth) }
+        }
+        return spectrumBuffer
+    }
+    
     
     private func fft(_ buffer : AVAudioPCMBuffer) -> [[Float]] {
         var amplitudes = [[Float]]()
