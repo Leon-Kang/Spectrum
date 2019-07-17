@@ -12,6 +12,7 @@
 		35B0741922DF0D23002DC09A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B0741722DF0D23002DC09A /* Main.storyboard */; };
 		35B0741B22DF0D24002DC09A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B0741A22DF0D24002DC09A /* Assets.xcassets */; };
 		35B0741E22DF0D24002DC09A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B0741C22DF0D24002DC09A /* LaunchScreen.storyboard */; };
+		35B0742722DF0D7B002DC09A /* AudioAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0742622DF0D7B002DC09A /* AudioAnalyzer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		35B0741A22DF0D24002DC09A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35B0741D22DF0D24002DC09A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35B0741F22DF0D24002DC09A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35B0742622DF0D7B002DC09A /* AudioAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAnalyzer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +58,21 @@
 			children = (
 				35B0741322DF0D23002DC09A /* AppDelegate.swift */,
 				35B0741522DF0D23002DC09A /* ViewController.swift */,
-				35B0741722DF0D23002DC09A /* Main.storyboard */,
-				35B0741A22DF0D24002DC09A /* Assets.xcassets */,
-				35B0741C22DF0D24002DC09A /* LaunchScreen.storyboard */,
+				35B0742622DF0D7B002DC09A /* AudioAnalyzer.swift */,
+				35B0742522DF0D3B002DC09A /* SupportFile */,
 				35B0741F22DF0D24002DC09A /* Info.plist */,
 			);
 			path = Spectrum;
+			sourceTree = "<group>";
+		};
+		35B0742522DF0D3B002DC09A /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				35B0741722DF0D23002DC09A /* Main.storyboard */,
+				35B0741A22DF0D24002DC09A /* Assets.xcassets */,
+				35B0741C22DF0D24002DC09A /* LaunchScreen.storyboard */,
+			);
+			path = SupportFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35B0741622DF0D23002DC09A /* ViewController.swift in Sources */,
+				35B0742722DF0D7B002DC09A /* AudioAnalyzer.swift in Sources */,
 				35B0741422DF0D23002DC09A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
