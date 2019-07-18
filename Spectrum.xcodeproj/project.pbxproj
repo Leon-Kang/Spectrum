@@ -13,6 +13,9 @@
 		35B0741B22DF0D24002DC09A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B0741A22DF0D24002DC09A /* Assets.xcassets */; };
 		35B0741E22DF0D24002DC09A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B0741C22DF0D24002DC09A /* LaunchScreen.storyboard */; };
 		35B0742722DF0D7B002DC09A /* AudioAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0742622DF0D7B002DC09A /* AudioAnalyzer.swift */; };
+		35B0742922E03F4A002DC09A /* SpectrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0742822E03F4A002DC09A /* SpectrumView.swift */; };
+		35B0742B22E0490C002DC09A /* AudioSpectrumPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0742A22E0490C002DC09A /* AudioSpectrumPlayer.swift */; };
+		35B0742D22E04F96002DC09A /* 01.Halcyon - Runaway (Feat. Valentina Franco) (Heuse Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35B0742C22E04F96002DC09A /* 01.Halcyon - Runaway (Feat. Valentina Franco) (Heuse Remix).mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		35B0741D22DF0D24002DC09A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35B0741F22DF0D24002DC09A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35B0742622DF0D7B002DC09A /* AudioAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAnalyzer.swift; sourceTree = "<group>"; };
+		35B0742822E03F4A002DC09A /* SpectrumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumView.swift; sourceTree = "<group>"; };
+		35B0742A22E0490C002DC09A /* AudioSpectrumPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpectrumPlayer.swift; sourceTree = "<group>"; };
+		35B0742C22E04F96002DC09A /* 01.Halcyon - Runaway (Feat. Valentina Franco) (Heuse Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01.Halcyon - Runaway (Feat. Valentina Franco) (Heuse Remix).mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 				35B0741322DF0D23002DC09A /* AppDelegate.swift */,
 				35B0741522DF0D23002DC09A /* ViewController.swift */,
 				35B0742622DF0D7B002DC09A /* AudioAnalyzer.swift */,
+				35B0742822E03F4A002DC09A /* SpectrumView.swift */,
+				35B0742A22E0490C002DC09A /* AudioSpectrumPlayer.swift */,
 				35B0742522DF0D3B002DC09A /* SupportFile */,
 				35B0741F22DF0D24002DC09A /* Info.plist */,
 			);
@@ -69,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				35B0741722DF0D23002DC09A /* Main.storyboard */,
+				35B0742C22E04F96002DC09A /* 01.Halcyon - Runaway (Feat. Valentina Franco) (Heuse Remix).mp3 */,
 				35B0741A22DF0D24002DC09A /* Assets.xcassets */,
 				35B0741C22DF0D24002DC09A /* LaunchScreen.storyboard */,
 			);
@@ -133,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B0742D22E04F96002DC09A /* 01.Halcyon - Runaway (Feat. Valentina Franco) (Heuse Remix).mp3 in Resources */,
 				35B0741E22DF0D24002DC09A /* LaunchScreen.storyboard in Resources */,
 				35B0741B22DF0D24002DC09A /* Assets.xcassets in Resources */,
 				35B0741922DF0D23002DC09A /* Main.storyboard in Resources */,
@@ -148,7 +158,9 @@
 			files = (
 				35B0741622DF0D23002DC09A /* ViewController.swift in Sources */,
 				35B0742722DF0D7B002DC09A /* AudioAnalyzer.swift in Sources */,
+				35B0742B22E0490C002DC09A /* AudioSpectrumPlayer.swift in Sources */,
 				35B0741422DF0D23002DC09A /* AppDelegate.swift in Sources */,
+				35B0742922E03F4A002DC09A /* SpectrumView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
