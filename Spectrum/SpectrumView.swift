@@ -63,10 +63,10 @@ class SpectrumView: UIView {
     }
     
     private func setupUI() {
-        rightGradientLayer.colors = [UIColor(red: 105.0, green: 184.0, blue: 220.0, alpha: 1).cgColor,
-                                     UIColor(red: 96.0, green: 229.0, blue: 204.0, alpha: 1).cgColor]
-        leftGradientLayer.colors = [UIColor(red: 9.0, green: 196.0, blue: 175.0, alpha: 1).cgColor,
-                                    UIColor(red: 90.0, green: 104.0, blue: 206.0, alpha: 1).cgColor]
+        rightGradientLayer.colors = [UIColor(red: 105.0 / 255.0, green: 184.0 / 255.0, blue: 220.0 / 255.0, alpha: 1).cgColor,
+                                     UIColor(red: 96.0 / 255.0, green: 229.0 / 255.0, blue: 204.0 / 255.0, alpha: 1).cgColor]
+        leftGradientLayer.colors = [UIColor(red: 9.0 / 255.0, green: 196.0 / 255.0, blue: 175.0 / 255.0, alpha: 1).cgColor,
+                                    UIColor(red: 90.0 / 255.0, green: 104.0 / 255.0, blue: 206.0 / 255.0, alpha: 1).cgColor]
         
         rightGradientLayer.locations = [0.6, 1.0]
         leftGradientLayer.locations = [0.6, 1.0]
