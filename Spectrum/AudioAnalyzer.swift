@@ -99,6 +99,13 @@ class AudioAnalyzer {
             channels = UnsafePointer(channelTemp)
         }
         
+        amplitudes = addAmplitudes(with: channelCount, channels: channels)
+        
+        return amplitudes
+    }
+    
+    private func addAmplitudes(with channelCount : Int, channels : UnsafePointer<UnsafeMutablePointer<Float>>) -> [[Float]] {
+        var amplitudes = [[Float]]()
         for i in 0 ..< channelCount {
             let channel = channels[i]
             var window = [Float](repeating: 0, count: Int(fftSize))
@@ -123,7 +130,6 @@ class AudioAnalyzer {
             channelAmplitudes[0] = channelAmplitudes[0] / 2
             amplitudes.append(channelAmplitudes)
         }
-        
         return amplitudes
     }
     
